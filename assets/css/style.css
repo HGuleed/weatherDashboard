@@ -1,0 +1,29 @@
+/* Styling for the entire page */
+* {
+  margin: 5px;
+}
+
+/* Styling for header */
+
+header {
+  border: 5px solid red;
+  flex-basis: 100%;
+}
+
+/* Styling for main section */
+
+aside {
+  border: 5px solid orange;
+}
+.cityDetails {
+  border: 5px solid yellow;
+}
+.fiveDays {
+  border: 5px solid green;
+}
+.forecastContainer {
+  border: 5px solid blue;
+}
+.forecast {
+  border: 5px solid purple;
+}

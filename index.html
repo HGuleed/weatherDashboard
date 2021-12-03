@@ -23,9 +23,21 @@
         <label for="city"></label>
         <input type="text" />
         <button id="startBtn" class="button">Search</button>
+        <ul id="cities"></ul>
       </aside>
-      <section id="cityStats" class="cityDetails"></section>
-      <section id="fiveDays" class="fiveDays"></section>
+      <section id="cityStats" class="cityDetails">
+        <h3>City details</h3>
+      </section>
+      <section id="fiveDays" class="fiveDays">
+        <h3>5-Day Forecast</h3>
+        <div id="forecastContainer" class="forecastContainer">
+          <div id="day1" class="forecast">Day 1</div>
+          <div id="day2" class="forecast">Day 2</div>
+          <div id="day3" class="forecast">day 3</div>
+          <div id="day4" class="forecast">day 4</div>
+          <div id="day5" class="forecast">day 5</div>
+        </div>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
