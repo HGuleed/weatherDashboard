@@ -12,7 +12,7 @@ header {
 
 /* Styling for main section */
 
-aside {
+.search {
   border: 5px solid orange;
 }
 .cityDetails {

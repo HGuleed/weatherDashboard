@@ -17,25 +17,29 @@
     <header>
       <h1>Weather Dashboard</h1>
     </header>
-    <main>
-      <aside>
+    <main class="container">
+      <section id="search" class="search">
         <h2>Search for a City</h2>
-        <label for="city"></label>
-        <input type="text" />
+
+        <input idtype="text" />
         <button id="startBtn" class="button">Search</button>
-        <ul id="cities"></ul>
-      </aside>
-      <section id="cityStats" class="cityDetails">
-        <h3>City details</h3>
+        <ul id="cities">
+          <li id="city">Ex1</li>
+        </ul>
       </section>
-      <section id="fiveDays" class="fiveDays">
-        <h3>5-Day Forecast</h3>
-        <div id="forecastContainer" class="forecastContainer">
-          <div id="day1" class="forecast">Day 1</div>
-          <div id="day2" class="forecast">Day 2</div>
-          <div id="day3" class="forecast">day 3</div>
-          <div id="day4" class="forecast">day 4</div>
-          <div id="day5" class="forecast">day 5</div>
+      <section id="forecastContainer" class="forecastContainer">
+        <div id="cityStats" class="cityDetails">
+          <h3>City details</h3>
+        </div>
+        <div id="future" class="future">
+          <h3>5-Day Forecast</h3>
+          <ul id="days">
+            <li id="day1" class="forecast">Day 1</li>
+            <li id="day2" class="forecast">Day 2</li>
+            <li id="day3" class="forecast">day 3</li>
+            <li id="day4" class="forecast">day 4</li>
+            <li id="day5" class="forecast">day 5</li>
+          </ul>
         </div>
       </section>
     </main>
