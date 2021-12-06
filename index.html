@@ -17,31 +17,39 @@
     <header>
       <h1>Weather Dashboard</h1>
     </header>
-    <main class="container">
-      <section id="search" class="search">
-        <h2>Search for a City</h2>
+    <main class="container align-items-start">
+      <div class="row">
+        <section id="search" class="search col-3">
+          <h2>Search for a City</h2>
 
-        <input idtype="text" />
-        <button id="startBtn" class="button">Search</button>
-        <ul id="cities">
-          <li id="city">Ex1</li>
-        </ul>
-      </section>
-      <section id="forecastContainer" class="forecastContainer">
-        <div id="cityStats" class="cityDetails">
-          <h3>City details</h3>
-        </div>
-        <div id="future" class="future">
-          <h3>5-Day Forecast</h3>
-          <ul id="days">
-            <li id="day1" class="forecast">Day 1</li>
-            <li id="day2" class="forecast">Day 2</li>
-            <li id="day3" class="forecast">day 3</li>
-            <li id="day4" class="forecast">day 4</li>
-            <li id="day5" class="forecast">day 5</li>
+          <input idtype="text" />
+          <button id="startBtn" class="button">Search</button>
+          <ul id="cities">
+            <li id="city">Ex1</li>
           </ul>
-        </div>
-      </section>
+        </section>
+        <section id="forecastContainer" class="forecastContainer col-9">
+          <div id="cityStats" class="cityDetails">
+            <h3>City details</h3>
+            <ul id="cityTWHUV" class="cityDetails">
+              <li id="temp">Temp:</li>
+              <li id="wind">Wind:</li>
+              <li id="humidity">Humidity</li>
+              <li id="uvIndex">UV Index:</li>
+            </ul>
+          </div>
+          <div id="future" class="future">
+            <h3>5-Day Forecast:</h3>
+            <ul id="days">
+              <li id="day1" class="forecast">Day 1</li>
+              <li id="day2" class="forecast">Day 2</li>
+              <li id="day3" class="forecast">day 3</li>
+              <li id="day4" class="forecast">day 4</li>
+              <li id="day5" class="forecast">day 5</li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>

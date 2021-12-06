@@ -1,29 +1,52 @@
 /* Styling for the entire page */
 * {
-  margin: 5px;
+  margin: 0px;
 }
 
 /* Styling for header */
 
 header {
+  display: flex;
   border: 5px solid red;
   flex-basis: 100%;
+  width: 100vw;
 }
-
-/* Styling for main section */
-
+/* Styling for main section  */
+.container {
+  border: 5px dashed black;
+  height: 80vh;
+  width: 100vw;
+}
+.row {
+  display: flex;
+  border: 5px dotted teal;
+  height: 100%;
+}
+/* Styling for search section */
 .search {
-  border: 5px solid orange;
-}
+    border: 5px solid orange;
+  }
+
+/* Styling for forecast section */
+
 .cityDetails {
-  border: 5px solid yellow;
+    border: 5px solid yellow;
+    height: 50%;
+  }
+
+.future {
+  border: 5px solid indigo;
+  height: 50%;
 }
+
+  
 .fiveDays {
   border: 5px solid green;
 }
 .forecastContainer {
   border: 5px solid blue;
+  display: flex;
+  flex-direction: column;
 }
 .forecast {
-  border: 5px solid purple;
-}
+  border: 5px solid pink;
