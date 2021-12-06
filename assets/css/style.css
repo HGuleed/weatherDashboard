@@ -1,6 +1,12 @@
 /* Styling for the entire page */
 * {
   margin: 0px;
+  padding: 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1,
+h2 {
+  font-weight: bold;
 }
 
 /* Styling for header */
@@ -10,8 +16,10 @@ header {
   border: 5px solid red;
   flex-basis: 100%;
   width: 100vw;
+  display: flex;
+  justify-content: center;
 }
-/* Styling for main section  */
+/* Styling for main sections  */
 .container {
   border: 5px dashed black;
   height: 80vh;
@@ -24,29 +32,55 @@ header {
 }
 /* Styling for search section */
 .search {
-    border: 5px solid orange;
-  }
+  border: 5px solid orange;
+}
 
 /* Styling for forecast section */
-
-.cityDetails {
-    border: 5px solid yellow;
-    height: 50%;
-  }
-
-.future {
-  border: 5px solid indigo;
-  height: 50%;
-}
-
-  
-.fiveDays {
-  border: 5px solid green;
-}
 .forecastContainer {
   border: 5px solid blue;
   display: flex;
   flex-direction: column;
 }
+
+.cityDetails {
+  border: 5px solid yellow;
+  height: 50%;
+}
+
+.cityName {
+  border: 5px solid powderblue;
+  height: 25%;
+  padding-top: 15px;
+}
+
+.cityTWHUV {
+  border: 5px solid peachpuff;
+  height: 75%;
+  display: flex;
+  list-style: none;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: inherit;
+}
+.future {
+  border: 5px solid indigo;
+  height: 50%;
+}
+.forecastTitle {
+  border: 5px solid green;
+  height: 20%;
+}
+.forecast5Day {
+  border: 5px solid teal;
+  height: 80%;
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: inherit;
+}
 .forecast {
   border: 5px solid pink;
+  width: 20%;
+  margin: 0 10px;
+}
