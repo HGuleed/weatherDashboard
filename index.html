@@ -19,12 +19,14 @@
     </header>
     <main class="container align-items-start">
       <div class="row">
-        <section id="search" class="search col-3">
-          <h2>Search for a City</h2>
+        <section id="search" class="searchSection col-3">
+          <h2 class="searchTitle">Search for a City:</h2>
+          <div class="search">
+            <input idtype="text" />
+            <button id="startBtn" class="button">Search</button>
+          </div>
 
-          <input idtype="text" />
-          <button id="startBtn" class="button">Search</button>
-          <ul id="cities">
+          <ul id="cityList" class="cityList">
             <li id="city">Ex1</li>
           </ul>
         </section>

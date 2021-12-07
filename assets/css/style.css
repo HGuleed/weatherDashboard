@@ -31,8 +31,33 @@ header {
   height: 100%;
 }
 /* Styling for search section */
-.search {
+.searchSection {
   border: 5px solid orange;
+}
+.searchTitle {
+  border: 5px solid red;
+  height: 10%;
+}
+.search {
+  border: 5px solid cornflowerblue;
+  height: 20%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+input {
+  border: 5px solid yellow;
+  height: 40%;
+}
+.button {
+  border: 5px solid purple;
+  height: 40%;
+  border-radius: 10%;
+}
+.cityList {
+  border: 5px solid blue;
+  height: 70%;
+  margin-top: 20px;
 }
 
 /* Styling for forecast section */
