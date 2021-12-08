@@ -22,8 +22,8 @@
         <section id="search" class="searchSection col-3">
           <h2 class="searchTitle">Search for a City:</h2>
           <div class="search">
-            <input idtype="text" />
-            <button id="startBtn" class="button">Search</button>
+            <input idtype="text" id="cityInput" />
+            <button id="searchBtn" class="button">Search</button>
           </div>
 
           <ul id="cityList" class="cityList">
@@ -34,29 +34,54 @@
           <div id="cityStats" class="cityDetails">
             <h2 id="cityName" class="cityName">City details</h2>
             <ul id="cityTWHUV" class="cityTWHUV">
-              <li id="temp" class="statDetails">Temp:</li>
-              <li id="wind" class="statDetails">Wind:</li>
-              <li id="humidity" class="statDetails">Humidity</li>
+              <li class="statDetails">Temp: <span id="temp"></span></li>
+              <li class="statDetails">Wind: <span id="wind"></span></li>
+              <li class="statDetails">Humidity</li>
               <li id="uvIndex" class="statDetails">UV Index:</li>
             </ul>
           </div>
+
           <div id="future" class="future">
-            <h3 class="forecastTitle">5-Day Forecast:</h3>
             <ul id="days" class="forecast5Day">
               <li id="day1" class="forecast">
                 <h4 id="day1Date">day 1</h4>
+                <ul class="indivualStats">
+                  <li>Temp: <span id="day1Temp"></span></li>
+                  <li>Wind: <span id="day1Wind"></span></li>
+                  <li>Humidity: <span id="day1Hum"></span></li>
+                </ul>
               </li>
               <li id="day2" class="forecast">
                 <h4 id="day2Date">day 2</h4>
+                <ul class="indivualStats">
+                  <li>Temp: <span id="day2Temp"></span></li>
+                  <li>Wind: <span id="day2Wind"></span></li>
+                  <li>Humidity: <span id="day2Hum"></span></li>
+                </ul>
               </li>
               <li id="day3" class="forecast">
                 <h4 id="day3Date">day 3</h4>
+                <ul class="indivualStats">
+                  <li>Temp: <span id="day3Temp"></span></li>
+                  <li>Wind: <span id="day3Wind"></span></li>
+                  <li>Humidity: <span id="day3Hum"></span></li>
+                </ul>
               </li>
               <li id="day4" class="forecast">
                 <h4 id="day4Date">day 4</h4>
+                <ul class="indivualStats">
+                  <li>Temp: <span id="day4Temp"></span></li>
+                  <li>Wind: <span id="day4Wind"></span></li>
+                  <li>Humidity: <span id="day4Hum"></span></li>
+                </ul>
               </li>
               <li id="day5" class="forecast">
                 <h4 id="day5Date">day 5</h4>
+                <ul class="indivualStats">
+                  <li>Temp: <span id="day5Temp"></span></li>
+                  <li>Wind: <span id="day5Wind"></span></li>
+                  <li>Humidity: <span id="day5Hum"></span></li>
+                </ul>
               </li>
             </ul>
           </div>
