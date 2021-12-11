@@ -27,7 +27,7 @@ function geoCoor() {
         lat +
         "&lon=" +
         lon +
-        "&exclude=hourly,minutely,alerts&appid=" +
+        "&exclude=hourly,minutely,alerts&units=imperial&appid=" +
         apiKey;
       return fetch(weatherApi);
     })
@@ -37,30 +37,14 @@ function geoCoor() {
     .then(function (findData) {
       console.log(findData);
     });
-  let currentTemp = document.getElementById("temp");
-
-  currentTemp.textContent = findData[0].current.temp;
 }
 // Display current weather
 
-function displayCurrent(weatherData) {
-  let currentTemp = document.getElementById("temp");
+function displayWeather() {
+  let cityName = document.getElementById("input").value;
 
-  currentTemp.textContent = findData[0].current.temp;
-
-  // let currentWind = document.getElementById("wind");
-  // currentWind.textContent =
-
-  // let currentHum = document.getElementById("currentHum");
-  // currentHum.textContent=
-
-  // let currentUV = document.getElementById("currentUV");
-  // currentUV.textContent=
+  Date= today.
 }
-
-// Display 5 day forecast
-
-// function displayFiveDay() {}
 
 // Event listener to call function
 

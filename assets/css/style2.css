@@ -61,6 +61,10 @@ input {
   background-color: #6193ea;
   color: white;
 }
+hr {
+  color: black;
+  height: 2vh;
+}
 .searchedCities {
   margin-top: 20px !important;
   height: 70%;
