@@ -18,20 +18,22 @@
     <header>Weather Dashboard</header>
     <main class="container">
       <div class="row mainRow">
-        <section class="serchSection col-md-3">
-          <h2>Search for a City:</h2>
-          <input id="input" class="input" type="text" />
-          <button id="search" class="searchBtn">Search</button>
-          <ul class="searchedCities">
+        <section class="searchSection col-md-3">
+          <div class="searchBox">
+            <h2 class="searchTitle">Search for a City:</h2>
+            <input id="input" class="input" type="text" />
+            <button id="search" class="searchBtn">Search</button>
+          </div>
+          <ul class="cityList">
             <li class="list">
-              <button id="citySearched" class="searchedCity">Columbus</button>
+              <button id="citySearched" class="citySearched">Columbus</button>
             </li>
           </ul>
         </section>
         <section class="col-md-9">
           <div class="currentForecast row">
             <div class="col">
-              <h2 id="cityName" class="cityName">City Name</h2>
+              <h2 id="cityName" class="cityName"></h2>
               <ul class="cityTWHUV">
                 <li class="currentTemp">Temp: <span id="temp"></span></li>
                 <li class="currentWind">Wind: <span id="wind"></span></li>
@@ -40,16 +42,16 @@
               </ul>
             </div>
           </div>
-          <div class="row">
+          <div class="fiveDay row">
             <div class="col">
               <div class="row">
                 <div class="col">
-                  <h3>5-Day Forecast</h3>
+                  <h3>5-Day Forecast:</h3>
 
-                  <div class="row">
-                    <div class="col">
+                  <div class="row fiveDayRow">
+                    <div class="col fiveDays">
                       <h4 id="date1"></h4>
-                      <ul>
+                      <ul class="future">
                         <li id="img1"></li>
                         <li>Temp: <span id="temp1"></span></li>
                         <li>Wind: <span id="wind1"></span></li>
@@ -57,9 +59,9 @@
                       </ul>
                     </div>
 
-                    <div class="col">
+                    <div class="col fiveDays">
                       <h4 id="date2"></h4>
-                      <ul>
+                      <ul class="future">
                         <li id="img2"></li>
                         <li>Temp: <span id="temp2"></span></li>
                         <li>Wind: <span id="wind2"></span></li>
@@ -67,9 +69,9 @@
                       </ul>
                     </div>
 
-                    <div class="col">
+                    <div class="col fiveDays">
                       <h4 id="date3"></h4>
-                      <ul>
+                      <ul class="future">
                         <li id="img3"></li>
                         <li>Temp: <span id="temp3"></span></li>
                         <li>Wind: <span id="wind3"></span></li>
@@ -77,9 +79,9 @@
                       </ul>
                     </div>
 
-                    <div class="col">
+                    <div class="col fiveDays">
                       <h4 id="date4"></h4>
-                      <ul>
+                      <ul class="future">
                         <li id="img4"></li>
                         <li>Temp: <span id="temp4"></span></li>
                         <li>Wind: <span id="wind4"></span></li>
@@ -87,9 +89,9 @@
                       </ul>
                     </div>
 
-                    <div class="col">
+                    <div class="col fiveDays">
                       <h4 id="date5"></h4>
-                      <ul>
+                      <ul class="future">
                         <li id="img5"></li>
                         <li>Temp: <span id="temp5"></span></li>
                         <li>Wind: <span id="wind5"></span></li>
@@ -104,6 +106,7 @@
         </section>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

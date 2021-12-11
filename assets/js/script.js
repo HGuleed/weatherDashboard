@@ -37,31 +37,30 @@ function geoCoor() {
     .then(function (findData) {
       console.log(findData);
     });
+  let currentTemp = document.getElementById("temp");
+
+  currentTemp.textContent = findData[0].current.temp;
 }
 // Display current weather
 
 function displayCurrent(weatherData) {
   let currentTemp = document.getElementById("temp");
 
-  currentTemp.textContent = ;
+  currentTemp.textContent = findData[0].current.temp;
 
-  let currentWind = document.getElementById("wind");
-  currentWind.textContent = ;
+  // let currentWind = document.getElementById("wind");
+  // currentWind.textContent =
 
-  let currentHum = document.getElementById("currentHum");
-  currentHum.textContent= ;
+  // let currentHum = document.getElementById("currentHum");
+  // currentHum.textContent=
 
-  let currentUV = document.getElementById("currentUV");
-  currentUV.textContent= ;
-
-
+  // let currentUV = document.getElementById("currentUV");
+  // currentUV.textContent=
 }
 
 // Display 5 day forecast
 
-function displayFiveDay(){
-  
-}
+// function displayFiveDay() {}
 
 // Event listener to call function
 
