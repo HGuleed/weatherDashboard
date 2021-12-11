@@ -2,59 +2,67 @@ let searchBtn = document.getElementById("searchBtn");
 let today = new Date();
 let apiKey = "da8210ca591e6c503f687e21d47ead5b";
 let apiKey2 = "dc6e179cb0618d51ccd91e501035eb2d";
-searchBtn.addEventListener("click", searchCity);
 
-// Fetching Data from API
+// Collecting longitude & latitude
 
-function searchCity() {
-  //   debugger;
-  let cityName = document.getElementById("cityInput").value;
-  let apiUrl =
-    "https://api.openweathermap.org/data/2.5/weather?q=" +
+function geoCoor() {
+  let cityName = document.getElementById("input").value;
+  let geoApi =
+    "http://api.openweathermap.org/geo/1.0/direct?q=" +
     cityName +
-    "&appid=" +
-    apiKey +
-    "&units=imperial";
+    "&limit=1&appid=da8210ca591e6c503f687e21d47ead5b";
+  var lon = "";
+  var lat = "";
 
-  fetch(apiUrl)
-    .then(function (response) {
-      if (response.ok) {
-        response.json().then(function (data) {
-          console.log(data);
-          displayCurrent(data);
-          fiveDay();
-        });
-      } else {
-        alert("ERROR: No response from API");
-      }
+  fetch(geoApi)
+    .then(function (data) {
+      return data.json();
     })
-    .catch(function (error) {
-      alert("Unable to connect to API");
-      console.log(error);
+    .then(function (data) {
+      lat = data[0].lat;
+      lon = data[0].lon;
+      // console.log(data);
+      let weatherApi =
+        "https://api.openweathermap.org/data/2.5/onecall?lat=" +
+        lat +
+        "&lon=" +
+        lon +
+        "&exclude=hourly,minutely,alerts&appid=" +
+        apiKey;
+      return fetch(weatherApi);
+    })
+    .then(function (weatherData) {
+      return weatherData.json();
+    })
+    .then(function (findData) {
+      console.log(findData);
     });
 }
-function fiveDay() {
-  let cityName = document.getElementById("cityInput").value;
-  let apiUrl =
-    "https://api.openweathermap.org/data/2.5/forecast/daily?q=" +
-    cityName +
-    "&appid=" +
-    apiKey2;
+// Display current weather
 
-  fetch(apiUrl).then(function (response) {
-    if (response.ok) {
-      response.json().then(function (data) {
-        console.log(data);
-      });
-    }
-  });
-}
-// Dynamically creating the data
 function displayCurrent(weatherData) {
   let currentTemp = document.getElementById("temp");
 
-  currentTemp.textContent = weatherData.main.temp;
+  currentTemp.textContent = ;
 
   let currentWind = document.getElementById("wind");
-  currentWind.textContent = weatherData.wind.speed;
+  currentWind.textContent = ;
+
+  let currentHum = document.getElementById("currentHum");
+  currentHum.textContent= ;
+
+  let currentUV = document.getElementById("currentUV");
+  currentUV.textContent= ;
+
+
 }
+
+// Display 5 day forecast
+
+function displayFiveDay(){
+  
+}
+
+// Event listener to call function
+
+search.addEventListener("click", geoCoor);

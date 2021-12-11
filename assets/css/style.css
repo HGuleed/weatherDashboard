@@ -18,6 +18,8 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
+  height: 10vh;
+  font-size: xxx-large;
 }
 /* Styling for main sections  */
 .container {
@@ -29,6 +31,8 @@ header {
   display: flex;
   border: 5px dotted teal;
   height: 100%;
+}
+.mainRow {
 }
 /* Styling for search section */
 .searchSection {
