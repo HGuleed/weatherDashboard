@@ -1,0 +1,124 @@
+/* Styling  for entire page */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Styling for header */
+header {
+  display: flex;
+  flex-basis: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 9vh;
+  font-size: xxx-large;
+  background-image: linear-gradient(to right, #436ab7, #201057);
+  color: white;
+  font-weight: bold;
+}
+/* styling for main  */
+main {
+  height: 80vh;
+}
+.container {
+  height: 80vh;
+  margin-top: 20px !important;
+}
+.mainRow {
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+/* Styling for search sections */
+.searchSection {
+  margin: 10px auto;
+  height: 100%;
+}
+.searchBox {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 25%;
+  align-content: space-evenly;
+}
+.searchTitle {
+  font-weight: bolder;
+  font-size: 30px;
+  width: 100%;
+}
+input {
+  width: 20vw;
+  margin: 5px;
+  height: 5vh;
+}
+.searchBtn {
+  height: 5vh;
+  border-radius: 10%;
+  width: 20vw;
+  margin: 5px;
+
+  background-color: #6193ea;
+  color: white;
+}
+hr {
+  color: black;
+  height: 2vh;
+}
+.searchedCities {
+  margin-top: 20px !important;
+  height: 70%;
+  width: 100%;
+  border-radius: 10%;
+}
+.citySearched {
+  width: 20vw;
+  border-radius: 10%;
+  background-color: #b7b7b7;
+}
+
+/*  current Forecast section */
+
+.currentForecast {
+  border: 1px solid black;
+  margin: 10px auto;
+  height: 40%;
+}
+.cityName {
+  height: 25%;
+  padding-top: 15px;
+}
+
+.cityTWHUV {
+  height: 75%;
+  display: flex;
+  list-style: none;
+  flex-flow: column;
+  justify-content: space-around;
+  padding: inherit;
+}
+
+/* five day forecast styling */
+.fiveDay {
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fiveDayRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+.fiveDays {
+  color: white;
+  background-color: #34435b;
+  margin: 10px;
+  height: 20vh;
+  display: flex;
+}
+.future {
+  display: flex;
+  flex-flow: column;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-evenly;
+}
